@@ -21,7 +21,7 @@ To run the example:
 1. Clone the repository
 
 ```bash
-git clone ssh://git@github.com/asynchronous-flows/pdf-chatbot-template
+git clone ssh://git@github.com/asynchronous-flows/pdf-chatbot-example
 ```
 
 2. Change into the directory
