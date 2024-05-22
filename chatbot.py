@@ -7,7 +7,7 @@ from asyncflows import AsyncFlows
 
 async def main():
     # Load PDFs from the `books` folder
-    recipes_glob = os.path.join("books", "*.pdf")
+    recipes_glob = os.path.join("documents", "*.pdf")
     document_paths = glob.glob(recipes_glob)
 
     # Load the chatbot flow
