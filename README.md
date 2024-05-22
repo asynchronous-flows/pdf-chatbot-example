@@ -14,36 +14,41 @@ Built with `asyncflows`
 
 This example demonstrates how to use asyncflows PDF Chatbot to extract text from PDF files and use it to answer questions.
 
+It extracts text from PDFs (`asyncflows[pdf]`), 
+and runs retrieval and reranking models locally on your computer (`asyncflows[transformers]`).
+
 ## Running the Example
 
 To run the example:
 
-1. Clone the repository
+1. Set up [Ollama](https://github.com/asynchronous-flows/asyncflows#setting-up-ollama-for-local-inference) or configure [another language model](https://github.com/asynchronous-flows/asyncflows#using-any-language-model)  
+
+2. Clone the repository
 
 ```bash
 git clone ssh://git@github.com/asynchronous-flows/pdf-chatbot-example
 ```
 
-2. Change into the directory
+3. Change into the directory
 
 ```bash
 cd pdf-chatbot-template
 ```
 
-3. Create and activate your virtual environment (with, for example)
+4. Create and activate your virtual environment (with, for example)
 
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
 ```
 
-4. Install the dependencies
+5. Install the dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-5. Run the example
+6. Run the example
 
 ```bash
 python chatbot.py
