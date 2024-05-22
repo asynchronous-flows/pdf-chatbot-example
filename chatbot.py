@@ -6,18 +6,12 @@ from asyncflows import AsyncFlows
 
 
 async def main():
-    # Find the `chatbot.yaml` file in the `examples` directory
-    # This is to make sure the example can be run from any directory,
-    # e.g., `python -m asyncflows.examples.chatbot`
-    examples_dir = Path(os.path.dirname(__file__))
-    chatbot_flow_path = examples_dir / "chatbot.yaml"
-
     # Load PDFs from the `books` folder
-    recipes_glob = examples_dir / "books" / "*.pdf"
-    document_paths = glob.glob(str(recipes_glob))
+    recipes_glob = os.path.join("books", "*.pdf")
+    document_paths = glob.glob(recipes_glob)
 
     # Load the chatbot flow
-    flow = AsyncFlows.from_file(chatbot_flow_path).set_vars(
+    flow = AsyncFlows.from_file("chatbot.yaml").set_vars(
         pdf_filepaths=document_paths,
     )
 
