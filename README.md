@@ -17,6 +17,10 @@ This example demonstrates how to use asyncflows PDF Chatbot to extract text from
 It extracts text from PDFs (`asyncflows[pdf]`), 
 and runs retrieval and reranking models locally on your computer (`asyncflows[transformers]`).
 
+<div align="center">
+<img width="1180" alt="chatbot" src="https://github.com/asynchronous-flows/pdf-chatbot-example/assets/24586651/8f5c8335-59e0-491b-9428-6ffe4379ebfd">
+</div>
+
 ## Running the Example
 
 To run the example:
