@@ -40,7 +40,7 @@ source .venv/bin/activate
 4. Install the dependencies
 
 ```bash
-pip install -e .
+pip install -r requirements.txt
 ```
 
 5. Run the example
